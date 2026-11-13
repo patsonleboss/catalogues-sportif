@@ -1,3 +1,22 @@
+header{
+    background: linear-gradient(to right, #000000, #001f3f);
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px 13px;
+    text-align: center;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1{
+    color:white;
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    margin: 0;
+}
+
 nav ul{
     list-style-type: none;
     margin: 0;
@@ -7,12 +26,20 @@ nav ul{
 nav a{
     text-decoration: none;
     padding: 15px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
 }
 
 nav li{
     display: inline;
+    margin-left: 10px;
 }
 
 nav a:hover{
-    color: #ff0000;
+    color: #0e3e6e;
+}
+
+nav a.active{
+    color: #00ddff;
 }
