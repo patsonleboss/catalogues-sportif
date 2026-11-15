@@ -1,4 +1,4 @@
-
+/* Patrice Yerkobo Doume (20358613) et Julien Luis-Jean (20275728) */
 /* Page accueil */
 header{
     background: linear-gradient(to right, #000000, #001f3f);
@@ -146,7 +146,6 @@ body{
     transform: scale(1.5);
 }
 
-
 footer{
     background-color: #000000;
     color: white;
@@ -155,28 +154,70 @@ footer{
     clear: both;
 }
 
+/* Page catalogue*/
+.titre-page{
+    text-align: center;
+    margin: 20px 0;
+    color: #ffffff;
+}
+.grille{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+.carte{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+.carte:hover{
+    transform: scale(1.05);
+}
+.carte img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.carte h3{
+    font-size: 20px;
+    margin: 10px 0;
+    color : #001f3f;
+}
+.carte p{
+    font-size: 16px;
+    margin: 5px 0;
+}
+.carte .prix{
+    font-size: 24px;
+    font-weight: bold;
+    color: #004489;
+}
+
+/* Responsive */
 @media screen and (max-width: 768px) {
     header {
         flex-direction: column;
         gap: 20px;
     }
-
     nav li {
         display: inline-block;
         margin: 5px;
     }
-
     .sport-cards {
         flex-direction: column;
         align-items: center;
     }
-
     .img-card {
         width: 100%;
         height: 280px;
     }
+    .grille {
+        grid-template-columns: 1fr;
+    }
 }
-
-/* Page catalogue*/
 
 /* Page notre univers */
