@@ -1,69 +1,114 @@
+<!-- Patrice Yerkobo Doume (20358613) et Julien Luis-Jean (20275728) -->
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JP JERSEY | Accueil</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1> JP JERSEY</h1>
-
-        <nav>
-            <ul>
-                <li><a href="index.html" class="active">Accueil</a></li>
-                <li><a href="catalogue.html">Produits</a></li>
-                <li><a href="collection.html">Notre univers</a></li>
-                <li><a href="boutique.html">Notre boutique</a></li>
-            </ul>
-        </nav>
+        <div class="header-container">
+            <h1>JP JERSEY</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">Accueil</a></li>
+                    <li><a href="catalogue.html">Catalogue</a></li>
+                    <li><a href="collection.html">Notre univers</a></li>
+                    <li><a href="boutique.html">Notre boutique</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-<main>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="badge">ÉDITION LIMITÉE • POP-UP 2026</span>
+                <h2>UNE ÉQUIPE, UN SPORT, UNE PASSION</h2>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h2 class="eyebrow"> UNE ÉQUIPE, UN SPORT, UNE PASSION </h2>
-
-<!-- À retravailler -->
-
-            <p>
-                Chez JP JERSEY, le sport est plus qu'une simple activité physique. C'est une passion qui unit les gens, crée des souvenirs et forge des liens durables.
-                <br><strong><em>VIENS</em></strong> découvrir notre collection de jerseys et représente ton équipe avec style <strong>dès aujourd'hui!</strong>
-            </p>
-            <a href="catalogue.html" class="btn">Découvrir nos produits</a>
-        </div>
-    </section>
-
-    <section class="sport">
-        <h2>CHOISI TON SPORT</h2>
-
-        <div class="sport-cards">
-
-            <div class="img-card" id="basketball-card">
-                <img src="images/basketball.png" style="width: 200px; height: 200px;" alt="Basketball">
-                <h3>BASKETBALL</h3>
+                <p>
+                    Bienvenue dans notre <strong>boutique éphémère</strong> dédiée aux <strong>maillots officiels</strong> ! 
+                    Chez JP JERSEY, le sport est une passion qui unit les communautés et forge des liens durables.
+                </p>
+                <p>
+                    <strong><em>VIENS</em></strong> découvrir notre collection de jerseys et représente ton équipe avec style dès aujourd'hui !
+                </p>
+                
+                <a href="catalogue.html" class="btn">Découvrir nos produits</a>
             </div>
+        </section>
 
-            <div class="img-card" id="soccer-card">
-                <img src="images/soccer.png" style="width: 200px; height: 200px;" alt="Soccer">
-                <h3>SOCCER</h3>
+        <section class="sport">
+            <div class="sport-inner">
+                <h2>CHOISIS TON SPORT</h2>
+
+                <div class="sport-cards">
+                    <a href="catalogue.html#basketball" class="img-card card-basket">
+                        <img src="images/basketball.png" alt="Basketball">
+                        <h3>BASKETBALL</h3>
+                    </a>
+
+                    <a href="catalogue.html#soccer" class="img-card card-soccer">
+                        <img src="images/soccer.png" alt="Soccer">
+                        <h3>SOCCER</h3>
+                    </a>
+
+                    <a href="catalogue.html#football" class="img-card card-football">
+                        <img src="images/football.png" alt="Football">
+                        <h3>FOOTBALL</h3>
+                    </a>
+                </div>
             </div>
+        </section>
 
-            <div class="img-card" id="football-card">
-                <img src="images/football.png" style="width: 200px; height: 200px;" alt="Football">
-                <h3>FOOTBALL</h3>
+        <section class="sport">
+            <div class="sport-inner">
+                <h2>NOS ÉQUIPES</h2>
+
+                <div class="vitrine-container">
+                    <img src="images/vitrine-sports.png" alt="Vitrine des sports JP Jersey - Raptors, Alouettes et CF Montréal" usemap="#sports" class="vitrine">
+                </div>
+
+                <map name="sports">
+                    <area shape="rect" coords="0,0,300,500" href="catalogue.html#basketball" alt="Basketball - Toronto Raptors">
+                    <area shape="rect" coords="300,0,600,500" href="catalogue.html#football" alt="Football - Montréal Alouettes">
+                    <area shape="rect" coords="600,0,900,500" href="catalogue.html#soccer" alt="Soccer - CF Montréal">
+                </map>
+
+                <div class="liens-secours">
+                    <p>Accès direct : 
+                        <a href="catalogue.html#basketball">Basketball</a> | 
+                        <a href="catalogue.html#football">Football</a> | 
+                        <a href="catalogue.html#soccer">Soccer</a>
+                    </p>
+                </div>
             </div>
-
-        </div>
-    </section>
-
-</main>
+        </section>
+    </main>
 
     <footer>
-        <p>&copy; 2026 JP JERSEY. Tous droits réservés.</p>
+        <div class="footer-content">
+            <p><strong>JP JERSEY - Boutique éphémère</strong></p>
+            <p> 🚩4321 Rue Sainte-Catherine Ouest, Montréal, QC</p>
+            <p>📅 Ouvert du 1er au 30 novembre 2026</p>
+            <p>© 2026 JP JERSEY. Tous droits réservés.</p>
+            <a href="mailto:info@jpjersey.com" target="_blank" rel="noopener noreferrer">Nous contacter</a>
+            <a href="https://www.instagram.com/jpjersey" target="_blank" rel="noopener noreferrer">Instagram</a> |
+            <a href="https://www.facebook.com/jpjersey" target="_blank" rel="noopener noreferrer">Facebook</a> |
+            <a href="https://www.twitter.com/jpjersey" target="_blank" rel="noopener noreferrer">x</a>
+            <a href="https://www.facebook.com/jpjersey" class="fa fa-facebook"></a>
+            <a href="https://www.twitter.com/jpjersey" class="fa fa-twitter"></a>
+            <a href="https://www.google.com" class="fa fa-google"></a>
+            <a href="https://www.linkedin.com/company/jpjersey" class="fa fa-linkedin"></a>
+            <a href="https://www.youtube.com/jpjersey" class="fa fa-youtube"></a>
+
+        </div>
     </footer>
 </body>
 </html>
-

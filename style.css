@@ -1,236 +1,393 @@
+/* Patrice Yerkobo Doume (20358613) et Julien Luis-Jean (20275728) */
 
-/* Page accueil */
-header{
-    background: linear-gradient(to right, #000000, #001f3f);
-    border-radius: 5px;
-    padding: 20px;
-    margin: 20px 13px;
-    text-align: center;
+* {
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 100%;
+    background-color: #001f3f;
+    color: #001f3f;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', Arial, sans-serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Plus de max-width global sur main : les fonds s'étendent sur toute la largeur */
+main {
+    width: 100%;
+}
+
+section {
+    margin: 20px 0;
+}
+
+header {
+    width: 100%;
+    background-color: #001f3f;
+    border-bottom: 2px solid #9bdcf2;
+    padding: 15px 20px;
+}
+
+.header-container {
+    max-width: 1100px;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-header h1{
-    color:white;
-    font-family: Arial, sans-serif;
-    font-size: 36px;
+header h1 {
+    color: #ffffff;
+    font-size: 38px;
     margin: 0;
 }
 
-nav ul{
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
-nav a{
-    text-decoration: none;
-    padding: 15px;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-nav li{
+nav li {
     display: inline;
     margin-left: 10px;
 }
 
-nav a:hover{
-    color: #0e3e6e;
+nav a {
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease;
 }
 
-nav a.active{
-    color: #00ddff;
+nav a:hover {
+    color: #d71920;
 }
 
-*{
-    box-sizing: border-box;
+nav a.active {
+    color: #9bdcf2;
+    border-bottom: 2px solid #9bdcf2;
 }
 
-body{
-    font-family: Arial, sans-serif;
-    font-size: 100%;
-    background:linear-gradient(to right,#004489, #001f3f);
-    color: #000000;
-    margin: 0;
-    padding: 0;
-}
-
-.hero{
-    background: linear-gradient(to right, #9bdcf2, #004489);
-    margin: 20px 13px;
-    padding: 45px 20px;
+footer {
+    width: 100%;
+    background-color: #001f3f;
+    border-top: 2px solid #9bdcf2;
+    color: #ffffff;
     text-align: center;
-    border-radius: 5px;
+    padding: 30px 20px;
+    margin-top: 40px;
 }
 
-.hero-content{
-    max-width: 800px;
+.footer-content {
+    max-width: 1100px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Page accueil */
+.hero {
+    background: linear-gradient(rgba(0, 31, 63, 0.85), rgba(0, 31, 63, 0.85)), url('images/vitrine-sports.png');
+    background-size: cover;
+    background-position: center;
+    padding: 60px 20px;
+    text-align: center;
+    border-bottom: 2px solid #9bdcf2;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.hero-content {
+    max-width: 750px;
     margin: auto;
 }
 
-.hero h2{
-    font-size: 32px;
-    color: #001f3f;
-}
-
-.hero p{
-    font-size: 18px;
-    line-height: 1.7;
-    color: #001f3f;
-}
-
-.eyebrow{
-    font-weight: bold;
-    letter-spacing: auto;
-}
-
-.btn{
+.badge {
     display: inline-block;
-    background-color: #001f3f;
+    background-color: #d71920;
     color: #ffffff;
-    padding: 14px 25px;
-    text-decoration: none;
-    border-radius: 5px;
+    padding: 6px 14px;
+    font-size: 14px;
     font-weight: bold;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.hero h2 {
+    font-size: 34px;
+    color: #ffffff;
+    margin-top: 0;
+}
+
+.hero p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #f2f2f2;
+    max-width: 65ch; /* Limite la longueur des lignes pour un meilleur confort de lecture */
+    margin: 0 auto 15px auto;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #d71920;
+    color: #ffffff;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 15px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b01319;
+    transform: scale(1.05);
+}
+
+.sport {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sport-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sport h2,
+.titre-page {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #9bdcf2;
+    text-align: center;
+}
+
+.sport-cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.img-card {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    min-width: 250px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-basket {
+    border-top: 5px solid #d71920;
+}
+
+.card-soccer {
+    border-top: 5px solid #9bdcf2;
+}
+
+.card-football {
+    border-top: 5px solid #d71920;
+}
+
+.img-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+}
+
+.img-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.img-card h3 {
+    color: #001f3f;
+    font-size: 24px;
+    margin: 15px 0 5px 0;
+}
+
+.vitrine-container {
+    display: flex;
+    justify-content: center;
+}
+
+.vitrine {
+    width: 900px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.5);
+}
+
+.liens-secours {
     margin-top: 15px;
 }
 
-.btn:hover{
-    background-color: #004489;
+.liens-secours p {
+    color: #ffffff;
+    font-size: 16px;
 }
 
-.sport{
-    padding: 30px;
+.liens-secours a {
+    color: #9bdcf2;
+    margin: 0 10px;
+    text-decoration: underline;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.liens-secours a:hover {
+    color: #d71920;
+}
+
+/* Page catalogue */
+.grille {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 20px;
+}
+
+.carte {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.sport h2{
-    font-size: 30px;
-    margin-bottom: 50px;
-    color: #000913;
+.carte:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
 }
 
-.sport-cards{
+.carte img {
     width: 100%;
-    overflow: visible;
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    padding: 40px;
-}
-
-.img-card{
-    float: left;
-    width: 25%;
-    height: 275px;
-    padding: 5px;
-    cursor: pointer;
-    position: relative;
-    text-align: center;
-}
-
-.img-card img{
-    width: 100%;
-    height: 100%;
+    height: 200px;
     object-fit: cover;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+    border-radius: 8px;
 }
 
-.img-card:hover img{
-    cursor: pointer;
-    transform: scale(1.5);
+.carte h3 {
+    font-size: 22px;
+    margin: 12px 0;
+    color: #001f3f;
 }
 
-
-footer{
-    background-color: #000000;
-    color: white;
-    text-align: center;
-    padding: 5px;
-    clear: both;
+.carte p {
+    font-size: 16px;
+    margin: 6px 0;
+    color: #001f3f;
 }
 
-@media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    nav li {
-        display: inline-block;
-        margin: 5px;
-    }
-
-    .sport-cards {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .img-card {
-        width: 100%;
-        height: 280px;
-    }
+.carte .prix {
+    font-size: 26px;
+    font-weight: bold;
+    color: #d71920;
+    margin-top: 12px;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
 }
 
-/* Page catalogue*/
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
 
 /* Page notre univers */
+.collection-wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
 .collection {
-    background: linear-gradient(to right, #9bdcf2, #004489);
-    margin: 20px 15px;
+    background-color: #9bdcf2;
     padding: 40px 30px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .collection h2 {
     color: #001f3f;
-    font-size: 30px;
+    font-size: 32px;
     margin-bottom: 20px;
-
 }
 
-.collection h3 {
-    color: #004489;
-    font-size: 20px;
-    margin-bottom: 15px;
-}
-
-.collection p{
+.collection p {
     color: #001f3f;
-    font-size: 15px;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.6;
     max-width: 850px;
-    margin: auto
+    margin: auto;
 }
 
 .collection-container {
     display: flex;
     justify-content: center;
     align-items: stretch;
-    gap: 30px;
+    gap: 25px;
     flex-wrap: wrap;
     margin-top: 30px;
 }
 
 .collection-card {
-    background-color: white;
+    background-color: #ffffff;
     width: 30%;
     min-width: 250px;
-    padding: 30px;
+    padding: 25px;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
-.collection-card:hover{
-    transform: translateY(-10px);
+.collection-card:hover {
+    transform: scale(1.05);
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
 }
 
@@ -238,34 +395,34 @@ footer{
     width: 100%;
     height: 200px;
     object-fit: contain;
-    object-position: center;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
-.collection-card h3{
-    color: #004489;
+.collection-card h3 {
+    color: #001f3f;
     font-size: 22px;
-    margin-bottom: 15px;
+    margin: 15px 0;
 }
 
-.collection-card p{
-    color: #222222;
+.collection-card p {
+    color: #001f3f;
     font-size: 16px;
     line-height: 1.5;
 }
 
 .etapes {
-    background-color: #9bdcf2;
-    margin: 20px  15px;
+    background-color: #f2f2f2;
     padding: 30px;
-    border-radius: 5px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 30px;
 }
 
-.etapes h2{
-    color:#001f3f;
+.etapes h2 {
+    color: #001f3f;
     text-align: center;
     margin-bottom: 25px;
-    font-size: 30px;
+    font-size: 32px;
 }
 
 .etapes ol {
@@ -276,9 +433,10 @@ footer{
 
 .etapes li {
     color: #001f3f;
-    font-size: 20px;
-    line-height: 1.5;
+    font-size: 18px;
+    line-height: 1.6;
     padding-left: 10px;
+    margin-bottom: 8px;
 }
 
 @keyframes apparition {
@@ -286,32 +444,48 @@ footer{
         opacity: 0;
         transform: translateY(20px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
     }
 }
 
+.hero,
+.img-card,
 .collection,
 .collection-card,
 .etapes {
     animation: apparition 0.8s ease;
 }
+
+/* Responsive */
 @media screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 5px;
+    }
+
+    .sport-cards,
     .collection-container {
         flex-direction: column;
         align-items: center;
     }
 
+    .img-card,
     .collection-card {
         width: 100%;
     }
 
-    .collection {
-        padding: 25px 15px;
+    .grille {
+        grid-template-columns: 1fr;
     }
 
+    .collection,
     .etapes {
         padding: 25px 15px;
     }
