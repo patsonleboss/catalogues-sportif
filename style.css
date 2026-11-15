@@ -180,3 +180,139 @@ footer{
 /* Page catalogue*/
 
 /* Page notre univers */
+.collection {
+    background: linear-gradient(to right, #9bdcf2, #004489);
+    margin: 20px 15px;
+    padding: 40px 30px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.collection h2 {
+    color: #001f3f;
+    font-size: 30px;
+    margin-bottom: 20px;
+
+}
+
+.collection h3 {
+    color: #004489;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.collection p{
+    color: #001f3f;
+    font-size: 15px;
+    line-height: 1.5;
+    max-width: 850px;
+    margin: auto
+}
+
+.collection-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.collection-card {
+    background-color: white;
+    width: 30%;
+    min-width: 250px;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.collection-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.5);
+}
+
+.collection-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 5px;
+}
+
+.collection-card h3{
+    color: #004489;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.collection-card p{
+    color: #222222;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.etapes {
+    background-color: #9bdcf2;
+    margin: 20px  15px;
+    padding: 30px;
+    border-radius: 5px;
+}
+
+.etapes h2{
+    color:#001f3f;
+    text-align: center;
+    margin-bottom: 25px;
+    font-size: 30px;
+}
+
+.etapes ol {
+    max-width: 700px;
+    margin: auto;
+    padding-left: 30px;
+}
+
+.etapes li {
+    color: #001f3f;
+    font-size: 20px;
+    line-height: 1.5;
+    padding-left: 10px;
+}
+
+@keyframes apparition {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.collection,
+.collection-card,
+.etapes {
+    animation: apparition 0.8s ease;
+}
+@media screen and (max-width: 768px) {
+    .collection-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .collection-card {
+        width: 100%;
+    }
+
+    .collection {
+        padding: 25px 15px;
+    }
+
+    .etapes {
+        padding: 25px 15px;
+    }
+}
