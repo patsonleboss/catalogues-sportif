@@ -11,6 +11,8 @@
 le nom de la vidéo est : *******************************************************
 le lien est : *****************************************************************
 
+## Lien d'hebergement du site : ******************************************************
+
 ## Description du Projet
 
 JP JERSEY est un site Web statique et réactif conçu pour présenter et promouvoir une boutique éphémère spécialisée dans la vente de maillots officiels de sport (Basketball, Soccer et Football). Le projet met en valeur des articles de collection à travers une interface épurée, sans recours à des frameworks lourds, respectant strictement les consignes du cours IFT1005.
@@ -47,7 +49,9 @@ JP JERSEY est un site Web statique et réactif conçu pour présenter et promouv
 
 ## Sources des Images et Médias
 
-* **Basketball (`assets/basketballJersey.png`, `assets/basketball.png` & `assets/basketballJerseyOutside.webp`) :** [Lien vers le maillot Toronto Raptors (Leonard)](https://www.fanatics.com/international/en/toronto-raptors/toronto-raptors-nike-icon-edition-swingman-jersey-red/t-25255328+p-352204490893725+z-9-1742480192?_ref=p-TLP:m-GRID:i-r0c0:po-0)
+* **Basketball (`assets/basketballJersey.png` & `assets/basketball.png`) :** [Lien vers le maillot Toronto Raptors (Leonard)](https://www.fanatics.com/international/en/toronto-raptors/toronto-raptors-nike-icon-edition-swingman-jersey-red/t-25255328+p-352204490893725+z-9-1742480192?_ref=p-TLP:m-GRID:i-r0c0:po-0)
+
+* **`assets/basketballJerseyOutside.webp` :** [Publication des Toronto Raptors sur X au sujet du maillot de Kawhi Leonard](https://x.com/Raptors/status/2112293311469797634?lang=de)
 
 * **Soccer (`assets/soccerJersey.png` & `assets/soccer.png`) :** [Lien vers le maillot CF Montréal (Alexis Sánchez)](https://www.mlsstore.ca/fr/cf-montreal/mens-cf-montreal-alexis-sánchez-adidas-blue-2025-montréal-original-on-field-authentic-jersey/t-14567941+p-357771183738642+z-9-2290309962?_ref=p-DLP:m-GRID:i-r0c0:po-0) et [article sur le nouveau maillot du CF Montréal](https://www.journaldequebec.com/2025/02/13/le-cf-montreal-devoile-son-nouveau-maillot-inspire-du-passe)
 
